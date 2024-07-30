@@ -1,0 +1,9 @@
+@layer components {
+  .modal-open {
+    @apply overflow-hidden #{!important};
+  }
+
+  .modal-blur {
+    @apply blur-sm #{!important};
+  }
+}

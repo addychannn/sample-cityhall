@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>
+    <%= PRODUCT_NAME %>
+  </title>
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@900&display=swap" rel="stylesheet">
+
+  <script src="https://unpkg.com/vue@latest"></script>
+  <script src="https://unpkg.com/@vuepic/vue-datepicker@latest"></script>
+  <link rel="stylesheet" href="https://unpkg.com/@vuepic/vue-datepicker@latest/dist/main.css">
+  <!-- <script src="../path/to/fullcalendar.min.js"></script> -->
+
+
+
+
+</head>
+
+<body class="relative antialiased">
+  <noscript>
+    <strong>
+      We're sorry but <%= PRODUCT_NAME %> doesn't work properly without
+        JavaScript enabled. Please enable it to continue.
+    </strong>
+  </noscript>
+  <!-- for loading eme eme -->
+  <div id="app">
+    <style scoped>
+      html,
+      body,
+      #app,
+      .loading svg polyline {
+        fill: none;
+        stroke-width: 3;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      .loading {
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .loading svg polyline#back {
+        fill: none;
+        stroke: #ff4d5033;
+      }
+
+      .loading svg polyline#front {
+        fill: none;
+        stroke: #ff4d4f;
+        stroke-dasharray: 48, 144;
+        stroke-dashoffset: 192;
+        animation: dash_682 1.4s linear infinite;
+      }
+
+      @keyframes dash_682 {
+        72.5% {
+          opacity: 0;
+        }
+
+        to {
+          stroke-dashoffset: 0;
+        }
+      }
+    </style>
+
+    <div class="loading">
+      <svg width="64px" height="48px">
+        <polyline points="0.157 23.954, 14 23.954, 21.843 48, 43 0, 50 24, 64 24" id="back"></polyline>
+        <polyline points="0.157 23.954, 14 23.954, 21.843 48, 43 0, 50 24, 64 24" id="front"></polyline>
+      </svg>
+    </div>
+  </div>
+  <script type="module" src="/src/main.js">
+
+    
+     
+    
+  </script>
+
+</body>
+
+</html>

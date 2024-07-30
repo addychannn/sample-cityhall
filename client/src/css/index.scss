@@ -1,0 +1,31 @@
+@use "tailwindcss/base";
+@use "tailwindcss/components";
+@use "tailwindcss/utilities";
+
+@use "material-icons/iconfont/material-icons.css";
+@use "./fonts/open-sans.scss";
+
+@use "vue3-perfect-scrollbar/dist/vue3-perfect-scrollbar.css";
+@use "@vuepic/vue-datepicker/dist/main.css";
+
+@use "./app.scss";
+@use "./components/index.scss" as componentStyle;
+
+//@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@layer components{
+    #content ul,li,h1,h2,h3,h4,p {
+        @apply font-sans;
+    }
+    #content ul li{
+        @apply font-sans list-disc;
+    }
+
+     div,
+     p,
+     span {
+    //change font-family content to appy lexend font
+    @apply font-sans;
+  }
+}
+
